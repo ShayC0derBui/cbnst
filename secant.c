@@ -8,7 +8,7 @@
 
 int main()
 {
-	 float x0, x1, x2, f0, f1, f2, e;
+	 double x0, x1, x2, f0, f1, f2, e;
 	 int step = 1, N;
 	 /* Inputs */
 	 printf("\nEnter initial guesses:\n");
