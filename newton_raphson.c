@@ -12,13 +12,13 @@
 
 int main()
 {
-	 float x0, x1, f0, f1, g0, e;
+	 double x0, x1, f0, f1, g0, e;
 	 int step = 1, N;
      /* Inputs */
 	 printf("\nEnter initial guess:\n");
-	 scanf("%f", &x0);
+	 scanf("%lf", &x0);
 	 printf("Enter tolerable error:\n");
-	 scanf("%f", &e);
+	 scanf("%lf", &e);
 	 printf("Enter maximum iteration:\n");
 	 scanf("%d", &N);
 	 /* Implementing Newton Raphson Method */
@@ -36,6 +36,7 @@ int main()
 				  x1 = x0 - f0/g0;
 
 		
+		  f1 = f(x1);
 		  printf("%d\t\t%f\t%f\t%f\t%f\n",step,x0,f0,x1,f1);
 		  x0 = x1;
 		  
@@ -47,7 +48,7 @@ int main()
 			   return 0;
 		  }
 
-		  f1 = f(x1);
+		 
 		  
 	 }while(fabs(f1)>e);
 	
